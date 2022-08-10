@@ -28,5 +28,11 @@ function fois(){
 }
 
 function egal(){
-   let result = document.getElementById("ecran").innerHTML; 
+   let result = document.getElementById("ecran").innerHTML;
+   console.log(result);
+   let u = result.length;
+   console.log(u);
+   //for (i=0; i++; i=u){
+    //    if c == "+;"
+   //}
 }
