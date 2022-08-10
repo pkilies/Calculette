@@ -1,48 +1,29 @@
+const { doc } = require("prettier");
+
 function bouttons(x){
-    var btn = document.createElement("BUTTON");        // Créer un élément <button>
-    var t = document.createTextNode(x);       // Créer un noeud textuel
-    btn.appendChild(t);                                // Ajouter le texte au bouton
-    document.body.appendChild(btn);   
+    let num = document.getElementById("ecran").innerHTML = x;
 };
 
-function clavier(){
-    for(i=0; i<10; i++){
-        bouttons(x);
-    }
-}
-
 function ecran(){
-    document.getElementById("ecran").innerHTML;
+    document.getElementById("ecran").innerHTML = x;
 };
 
 function plus(){
-    var btn = document.createElement("BUTTON");        // Créer un élément <button>
-    var t = document.createTextNode("+");       // Créer un noeud textuel
-    btn.appendChild(t);                                // Ajouter le texte au bouton
-    document.body.appendChild(btn);
+    document.getElementById("ecran").innerHTML = "+";
      
 }
 
 function moins(){
-    var btn = document.createElement("BUTTON");        // Créer un élément <button>
-    var t = document.createTextNode("-");       // Créer un noeud textuel
-    btn.appendChild(t);                                // Ajouter le texte au bouton
-    document.body.appendChild(btn);
+    document.getElementById("ecran").innerHTML = "-";
      
 }
 
-function diviser(){
-    var btn = document.createElement("BUTTON");        // Créer un élément <button>
-    var t = document.createTextNode("/");       // Créer un noeud textuel
-    btn.appendChild(t);                                // Ajouter le texte au bouton
-    document.body.appendChild(btn);
+function diviseur(){
+    document.getElementById("ecran").innerHTML = "/";
      
 }
 
-function multiplier(){
-    var btn = document.createElement("BUTTON");        // Créer un élément <button>
-    var t = document.createTextNode("*");       // Créer un noeud textuel
-    btn.appendChild(t);                                // Ajouter le texte au bouton
-    document.body.appendChild(btn);
+function fois(){
+    document.getElementById("ecran").innerHTML = "-";
      
 }
