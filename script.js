@@ -1,9 +1,6 @@
 const { doc } = require("prettier");
 
 function bouttons(x){
-   /*let a = document.getElementById("ecran");
-   let num = document.createTextNode(x);
-   a.appendChild(b);*/
    document.getElementById("ecran").innerHTML += x;
 };
 
@@ -12,27 +9,49 @@ function bouttons(x){
 };*/
 
 function plus(){
-    document.getElementById("ecran").innerHTML += "+"; 
+    document.getElementById("ecran").innerHTML += "+";
 }
 
 function moins(){
-    document.getElementById("ecran").innerHTML += "-";
+        document.getElementById("ecran").innerHTML += "-";
+    
 }
 
 function diviseur(){
-    document.getElementById("ecran").innerHTML += "/";
+        document.getElementById("ecran").innerHTML += "/";
 }
 
 function fois(){
-    document.getElementById("ecran").innerHTML += "*"; 
+    document.getElementById("ecran").innerHTML += "*";
 }
 
+/*function operations(){
+    var expression = document.getElementById("ecran");
+    if(expression.indexOf('++')
+    ||expression.indexOf('+-')
+    ||expression.indexOf('-+')
+    ||expression.indexOf('+*')
+    ||expression.indexOf('+/')
+    ||expression.indexOf('/+')
+    ||expression.indexOf('--')
+    ||expression.indexOf('-*')
+    ||expression.indexOf('-/')
+    ||expression.indexOf('/-')
+    ||expression.indexOf('//')
+    ||expression.indexOf('**')
+    ||expression.indexOf('/*')
+    ){
+        document.getElementById("ecran").innerHTML = "Erreur";
+    }
+
+}*/
+
 function egal(){
-   let result = document.getElementById("ecran").innerHTML;
-   console.log(result);
-   let u = result.length;
-   console.log(u);
-   //for (i=0; i++; i=u){
-    //    if c == "+;"
-   //}
+   // operations();
+   var expression = document.getElementById("ecran").innerHTML;
+   console.log(expression);
+   var resultat = parseInt(expression);
+   console.log(resultat);
+   document.getElementById("ecran").innerHTML = resultat;
+   
 }
