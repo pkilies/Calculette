@@ -1,27 +1,29 @@
-const { doc } = require("prettier");
+const {
+    doc
+} = require("prettier");
 
-function bouttons(x){
-   document.getElementById("ecran").innerHTML += x;
+function bouttons(x) {
+    document.getElementById("ecran").innerHTML += x;
 };
 
 /*function ecran(){
     document.getElementById("ecran").innerHTML;
 };*/
 
-function plus(){
+function plus() {
     document.getElementById("ecran").innerHTML += "+";
 }
 
-function moins(){
-        document.getElementById("ecran").innerHTML += "-";
-    
+function moins() {
+    document.getElementById("ecran").innerHTML += "-";
+
 }
 
-function diviseur(){
-        document.getElementById("ecran").innerHTML += "/";
+function diviseur() {
+    document.getElementById("ecran").innerHTML += "/";
 }
 
-function fois(){
+function fois() {
     document.getElementById("ecran").innerHTML += "*";
 }
 
@@ -46,12 +48,13 @@ function fois(){
 
 }*/
 
-function egal(){
-   // operations();
-   var expression = document.getElementById("ecran").innerHTML;
-   console.log(expression);
-   var resultat = parseInt(expression);
-   console.log(resultat);
-   document.getElementById("ecran").innerHTML = resultat;
-   
+function egal() {
+    var expression = document.getElementById("ecran").innerHTML;
+    console.log(expression);
+    var resultat = eval(expression);
+    console.log(resultat);
+    document.getElementById("ecran").innerHTML = resultat;
+
+
+
 }
